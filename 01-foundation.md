@@ -4,13 +4,13 @@
 
 AI tools are here. They're powerful. They're also imperfect.
 
-At Livefront, we've spent months integrating AI into our workflow, measuring results, and learning what works. This guide distills those learnings into practical guidance that maintains our engineering standards while leveraging new capabilities.
+At Livefront, we've spent months integrating AI into our workflow, observing results, and learning what works. This guide distills those learnings into practical guidance that maintains our engineering standards while leveraging new capabilities.
 
 ## What Changes
 
 ### You Become an Orchestrator
 
-Instead of writing every line, you're now directing, reviewing, and refining. Think of yourself as a senior engineer with a very capable but inexperienced junior developer who:
+Instead of writing every line, you're now directing, reviewing, and refining. Think of yourself as a senior engineer with a very capable but inexperienced junior developer(s) who:
 
 - Works 24/7 without getting tired
 - Has seen millions of code patterns
@@ -27,7 +27,7 @@ Those tasks you can do in your sleep? They now take minutes instead of hours:
 - Documentation writing
 - Data transformation functions
 
-**Data from our teams**:
+**Anecdotal Data from our teams**:
 
 - Form component creation: 2 hours -> 30 minutes
 - Test coverage for existing code: 4 hours -> 45 minutes

@@ -172,6 +172,7 @@ Include:
 
 - Which architecture serves the business goals?
 - What technical debt is acceptable?
+- What skills and systems do I have access to?
 - How does this fit with existing systems?
 - What's the migration strategy?
 
@@ -182,8 +183,6 @@ Always have AI generate three options, then:
 1. **Option 1**: The simple solution (MVP)
 2. **Option 2**: The "right" solution (if time/budget unlimited)
 3. **Option 3**: The pragmatic middle ground
-
-Present all three to stakeholders with clear trade-offs.
 
 ---
 
@@ -243,7 +242,6 @@ Focus on the structure, not implementation.
 
 ```text
 Now implement the TODOs in this code:
-[paste the structured code]
 
 Ensure:
 - All edge cases handled

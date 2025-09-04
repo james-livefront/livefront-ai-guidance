@@ -28,7 +28,7 @@
 **Goal**: Experience the immediate value by generating tests for existing code.
 
 1. **Find a function you wrote recently** (50-100 lines)
-2. **Copy it into your AI chat**
+2. **Copy it into your AI chat** (or otherwise get it into context)
 3. **Use this prompt**:
 
    ```text
@@ -184,7 +184,7 @@ Keep a prompt journal:
 **Morning Exercise**: Integration Test Creation
 
 1. Describe user flow to AI
-2. Generate Cypress/Playwright tests
+2. Generate Cypress/Playwright/Whatever tests
 3. Adjust selectors and assertions
 4. Run against your app
 
@@ -273,7 +273,7 @@ Each day, attempt one task you think is "too complex for AI"
 
 ### Problem: "I'm not sure if the AI code is secure"
 
-**Solution**: Good instinct. Never trust AI with security-critical code without thorough review. When in doubt, ask a senior engineer.
+**Solution**: Good instinct. Never trust AI with security-critical code without thorough review. When in doubt, ask your Engineering Manager.
 
 ---
 
