@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#archive\"",
-    "setup:hooks": "git config core.hooksPath .githooks && chmod +x .githooks/pre-commit"
+    "setup:hooks": "git config core.hooksPath .githooks && chmod +x .githooks/pre-commit",
+    "version:major": "bash scripts/bump-version.sh '[major] Manual version bump'",
+    "version:minor": "bash scripts/bump-version.sh '[minor] Manual version bump'",
+    "version:patch": "bash scripts/bump-version.sh '[patch] Manual version bump'"
   },
   "keywords": [],
   "author": "",

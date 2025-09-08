@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Prepare commit message with version bump indicators
+# Usage in commit message:
+# - [major] or [breaking] - Major version bump (1.0.0 -> 2.0.0)
+# - [minor] or [feature] - Minor version bump (1.0.0 -> 1.1.0)
+# - [patch] or [fix] - Patch version bump (1.0.0 -> 1.0.1)
+# - No tag defaults to patch
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+# Only add help text for fresh commits (not amends or merges)
+if [ -z "$COMMIT_SOURCE" ]; then
+    echo "" >> "$COMMIT_MSG_FILE"
+    echo "# Version bump tags:" >> "$COMMIT_MSG_FILE"
+    echo "# [major]/[breaking] - Breaking changes (2.0.0)" >> "$COMMIT_MSG_FILE"
+    echo "# [minor]/[feature]  - New content (1.2.0)" >> "$COMMIT_MSG_FILE"
+    echo "# [patch]/[fix]      - Fixes/typos (1.1.1)" >> "$COMMIT_MSG_FILE"
+    echo "# No tag = patch bump" >> "$COMMIT_MSG_FILE"
+fi

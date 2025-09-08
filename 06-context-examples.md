@@ -1,4 +1,3 @@
-<!-- markdownlint-disable MD012 MD022 MD031 MD032 MD033 MD040 -->
 # Context Engineering: Good vs Bad Examples
 
 *The difference between frustration and flow? How you provide context to AI.*
@@ -23,7 +22,7 @@ Get these right, and AI becomes genuinely helpful.
 
 ### Bad Context
 
-"Create a date picker component"
+"make a date thing"
 **Why it fails:**
 
 - No platform specified
@@ -33,26 +32,31 @@ Get these right, and AI becomes genuinely helpful.
 - AI will generate generic garbage
 
 ### Good Context
+
 Create a date picker component for our React Native healthcare app.
 
 CURRENT STATE:
+
 - React Native 0.72, TypeScript
 - Existing DateInput component (attached below)
 - Using react-hook-form for form management
 - Nativewind for styling
 
 REQUIREMENTS:
+
 - Patients select appointment dates
 - Must show availability (fetched via useAvailableSlots hook)
 - Prevent selection of: weekends, holidays, dates >90 days out
 - Accessibility: Voice-over support required
 
 TECHNICAL CONSTRAINTS:
+
 - Must work iOS 14+ and Android 8+
 - Integrate with existing form validation
 - Follow our design system (primary: #0066CC)
 
 OUTPUT:
+
 - TypeScript component
 - Unit tests using React Native Testing Library
 - Storybook story for component library
@@ -75,7 +79,7 @@ EXISTING CODE TO INTEGRATE WITH:
 
 ### Bad Context
 
-"This function doesn't work, fix it:
+"fix this its broken
 
 function calculate(data) {
   return data.reduce((a, b) => a + b.value);
@@ -118,7 +122,7 @@ EXPECTED BEHAVIOR:
 ACTUAL BEHAVIOR:
 
 - Works in development
-- Fails in production after 5-10 minutes
+- Fails in production intermittently
 - Error suggests undefined element in array
 
 SAMPLE INPUT THAT FAILS:
@@ -142,7 +146,6 @@ What's wrong and how should I fix it?
 
 - **Why it works:**
 
-
 - Exact error message provided
 - Expected vs actual behavior clear
 - Failing input example given
@@ -155,11 +158,9 @@ What's wrong and how should I fix it?
 
 ### Bad Context
 
+"is this code good?"
 
-"Review this code for best practices"
-
-[dumps 500 lines of code]
-
+[dumps 2000 lines of unformatted spaghetti]
 
 **Why it fails:**
 
@@ -235,11 +236,9 @@ Focus on the four specific concerns above.
 
 ### Bad Context
 
-"Write tests for this function"
+"test this"
 
-function processOrder(order) {
-  // ... 200 lines of code
-  }
+[pastes entire file with 47 functions]
 
 **Why it fails:**
 
@@ -256,6 +255,7 @@ FUNCTION PURPOSE:
 Validates e-commerce orders before payment processing
 
 BUSINESS RULES TO TEST:
+
 1. Orders must have at least 1 item
 2. Total must be > $0 and < $10,000
 3. Shipping address required for physical goods
@@ -263,12 +263,14 @@ BUSINESS RULES TO TEST:
 5. Coupon codes must be valid and not expired
 
 TEST FRAMEWORK:
+
 - Jest with TypeScript
 - Use describe/it blocks
 - Mock external services
 - Aim for 100% branch coverage
 
 FUNCTION:
+
 ```typescript
 interface Order {
   items: OrderItem[];
@@ -328,7 +330,7 @@ Generate comprehensive tests covering all business rules and edge cases.
 
 ### Bad Context
 
-"Design a microservices architecture for an e-commerce platform"
+"i need microsrvices"
 
 **Why it fails:**
 
@@ -342,12 +344,14 @@ Generate comprehensive tests covering all business rules and edge cases.
 Design the authentication service for our e-commerce microservices migration.
 
 CURRENT STATE:
+
 - Monolithic Rails app with Devise
 - 50K daily active users
 - PostgreSQL with users table (2M records)
 - Moving to microservices incrementally
 
 REQUIREMENTS:
+
 - Support existing session-based auth (migration period)
 - Add JWT for service-to-service communication
 - Social login (Google, Apple, Facebook)
@@ -355,6 +359,7 @@ REQUIREMENTS:
 - GDPR compliant (EU customers)
 
 CONSTRAINTS:
+
 - Team: 3 developers, 6 month timeline
 - Budget: Use existing AWS services
 - Must maintain 99.9% uptime during migration
@@ -362,18 +367,19 @@ CONSTRAINTS:
 - Node.js/TypeScript (team standard)
 
 INTEGRATION NEEDS:
+
 - Order Service: Verify user identity
 - Payment Service: Validate high-value transactions
 - Notification Service: Send auth emails
 - Legacy Rails: Share sessions during migration
 
 PLEASE PROVIDE:
+
 1. High-level architecture diagram
 2. API endpoints needed
 3. Database schema
 4. Migration strategy from monolith
 5. Security considerations
-```
 
 **Why it works:**
 
@@ -389,10 +395,7 @@ PLEASE PROVIDE:
 
 ### Bad Context
 
-"Document this API endpoint"
-
-app.post('/api/users', createUser);
-```
+"document this"
 
 **Why it fails:**
 
@@ -406,12 +409,14 @@ app.post('/api/users', createUser);
 Create OpenAPI documentation for our user creation endpoint.
 
 ENDPOINT DETAILS:
+
 - POST /api/v1/users
 - Creates new user account
 - Returns created user with generated ID
 - Requires API key authentication
 
 REQUEST BODY:
+
 ```typescript
 {
   email: string;        // Required, must be unique
@@ -433,7 +438,7 @@ RESPONSES:
 
 BUSINESS RULES:
 
-- Email must be verified within 24 hours
+- Email verification required
 - Temporary password for enterprise SSO users
 - Marketing opt-in requires explicit consent
 - GDPR: EU users get different terms
@@ -447,9 +452,8 @@ OpenAPI 3.0 specification with:
 - Rate limiting headers
 - Error response schemas
 
-```
-
 **Why it works:**
+
 - Format specified (OpenAPI)
 - All responses documented
 - Business rules included
@@ -462,9 +466,10 @@ OpenAPI 3.0 specification with:
 
 ### Bad Context
 
-"Make this code faster"
+"optimize"
 
-[pastes entire file]
+```text
+[screenshot of code]
 ```
 
 **Why it fails:**
@@ -479,11 +484,13 @@ OpenAPI 3.0 specification with:
 Optimize this data aggregation function that's our bottleneck.
 
 PERFORMANCE ISSUE:
+
 - Current: 3.2 seconds for 10K records
 - Target: <500ms
 - Profiler shows 85% time in this function
 
 FUNCTION:
+
 ```javascript
 function aggregateUserMetrics(users) {
   return users.map(user => {
@@ -525,8 +532,6 @@ CURRENT DATABASE LOAD:
 
 What's the bottleneck and how do we fix it?
 
-```
-
 **Why it works:**
 
 - Metrics provided
@@ -541,9 +546,11 @@ What's the bottleneck and how do we fix it?
 
 ### Bad Context
 
-"Convert this jQuery code to React"
+"make this modern"
 
-[pastes 1000 lines of jQuery spaghetti]
+```javascript
+[pastes jQuery from 2009 with no explanation of what it does]
+```
 
 **Why it fails:**
 
@@ -557,6 +564,7 @@ What's the bottleneck and how do we fix it?
 Migrate this jQuery form validation to React with hooks.
 
 CURRENT JQUERY CODE:
+
 ```javascript
 // Registration form with dynamic validation
 $('#register-form').on('submit', function(e) {
@@ -624,9 +632,8 @@ PROVIDE:
 3. Integration with React Hook Form
 4. API call with TanStack Query
 
-```
-
 **Why it works:**
+
 - Specific code section
 - Target stack defined
 - Requirements preserved
@@ -652,7 +659,8 @@ PROVIDE:
 [OUTPUT] Please provide [specific format/structure]
 
 [FOCUS] Specifically focus on [main concerns]
-```
+
+```text
 
 ### Example Using the Formula
 
@@ -663,6 +671,7 @@ PROVIDE:
 [CURRENT STATE] We currently have no rate limiting, seeing abuse on /api/search
 
 [REQUIREMENTS] It must:
+
 - Limit by IP address
 - Allow 100 requests per minute for anonymous users
 - Allow 1000 requests per minute for authenticated users
@@ -670,19 +679,23 @@ PROVIDE:
 - Log rate limit violations
 
 [CONSTRAINTS] We cannot:
+
 - Use external services (must be in-process)
 - Modify our Redis setup
 - Add significant latency (<5ms overhead)
 
 [OUTPUT] Please provide:
+
 - Middleware implementation
 - Redis-based token bucket
 - Integration instructions
 - Test examples
 
 [FOCUS] Specifically focus on:
+
 - Handling distributed rate limiting across multiple instances
 - Graceful degradation if Redis is unavailable
+
 ```
 
 ---
@@ -718,6 +731,6 @@ Before sending any prompt, check:
 
 ## Remember
 
-Good context is an investment. Spend 2 minutes writing good context, save 20 minutes of back-and-forth.
+Good context is an investment. Better context upfront means less back-and-forth.
 
 The AI can't read your mind, but with good context, it doesn't need to.

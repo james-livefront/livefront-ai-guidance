@@ -19,7 +19,7 @@ Instead of writing every line, you're now directing, reviewing, and refining. Th
 
 ### Speed on the Boring Stuff
 
-Those tasks you can do in your sleep? They now take minutes instead of hours:
+Those tasks you can do in your sleep? They're now dramatically faster:
 
 - Boilerplate component setup
 - Unit test generation
@@ -27,11 +27,7 @@ Those tasks you can do in your sleep? They now take minutes instead of hours:
 - Documentation writing
 - Data transformation functions
 
-**Anecdotal Data from our teams**:
-
-- Form component creation: 2 hours -> 30 minutes
-- Test coverage for existing code: 4 hours -> 45 minutes
-- API documentation: 1 hour -> 10 minutes
+**What our teams report**: Significant acceleration on repetitive tasks, with the biggest gains in boilerplate generation and test creation. The exact speedup depends on your codebase, patterns, and how well you prompt.
 
 ### The Nature of Bugs Changes
 
@@ -74,7 +70,7 @@ The emerging rule of thumb: AI consistently gets you 70% of the way there. This 
 **Powerful because**:
 
 - That 70% often represents the tedious work
-- It happens in minutes instead of hours
+- It happens much faster than manual coding
 - It frees you to focus on the interesting 30%
 
 **Dangerous because**:
@@ -104,6 +100,18 @@ The emerging rule of thumb: AI consistently gets you 70% of the way there. This 
 - Deciding how to handle the 90-day maximum edge case
 
 That 30% is why clients hire Livefront.
+
+### ⌨️ Try This Now: Experience the 70/30 Split
+
+**Goal**: Feel the boundary between AI capability and human expertise
+**Time**: 5 minutes
+**Do this**:
+
+1. Pick any component from your current project
+2. Ask AI to recreate it from just the component name
+3. Compare what AI generated vs your actual implementation
+4. Note what AI got right (structure) vs wrong (business logic)
+**Success looks like**: AI nailed the boilerplate but missed YOUR specific requirements
 
 ## Where AI Consistently Fails
 

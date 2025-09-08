@@ -1,8 +1,8 @@
 # Livefront AI Prompt Library
 
-## Battle-Tested Prompts for Common Tasks
+## Prompts for Common Tasks
 
-These prompts have been tested and refined by the Livefront team. Copy, customize, and share your own successful prompts.
+Please copy, customize, and share your own successful prompts!
 
 ---
 
@@ -26,7 +26,7 @@ Business requirements:
 
 Provide 3 options:
 1. MVP/Quick approach
-2. Ideal/Scalable approach  
+2. Ideal/Scalable approach
 3. Pragmatic middle ground
 
 For each include:
@@ -111,7 +111,7 @@ Include:
 - TypeScript types
 - Main function
 - Helper functions
-- Comprehensive error handling
+- Complete error handling
 - JSDoc comments
 - Unit tests
 ```
@@ -124,8 +124,8 @@ Optimize this SQL query:
 
 Database: [PostgreSQL/MySQL/etc]
 Table sizes: [approximate rows]
-Current execution time: [seconds]
-Target execution time: [seconds]
+Current performance: [baseline]
+Target performance: [goal]
 
 Provide:
 - Optimized query
@@ -139,10 +139,10 @@ Provide:
 
 ## Testing
 
-### Comprehensive Test Generation
+### Complete Test Generation
 
 ```text
-Generate comprehensive tests for:
+Generate complete tests for:
 [paste function/component code]
 
 Testing framework: Jest + React Native Testing Library
@@ -444,160 +444,6 @@ Include:
 
 ---
 
-## DevOps & Deployment
-
-### CI/CD Pipeline
-
-```text
-Create a CI/CD pipeline configuration:
-
-Platform: [GitHub Actions/GitLab CI/Jenkins]
-Project type: [React Native/Node.js/etc]
-
-Steps needed:
-- Install dependencies
-- Run linter
-- Run tests
-- Build application
-- Security scanning
-- Deploy to [environment]
-
-Requirements:
-- Cache dependencies
-- Parallel jobs where possible
-- Fail fast on critical issues
-- Notification on failure
-
-Generate the complete config file.
-```
-
-### Dockerfile Creation
-
-```text
-Create a Dockerfile for:
-
-Application: [type and tech stack]
-Base image preference: [if any]
-Size constraints: [if any]
-
-Requirements:
-- Multi-stage build
-- Security best practices
-- Minimal final image size
-- Non-root user
-- Health check
-
-Include:
-- Dockerfile
-- .dockerignore
-- Build and run commands
-- Comments explaining decisions
-```
-
-### Infrastructure as Code
-
-```text
-Generate [Terraform/CloudFormation/Pulumi] configuration for:
-
-Service: [describe service]
-Cloud provider: [AWS/GCP/Azure]
-Environment: [dev/staging/prod]
-
-Resources needed:
-- Compute: [instances/containers/serverless]
-- Storage: [database/object storage]
-- Networking: [VPC/subnets/load balancer]
-- Security: [IAM/security groups]
-
-Include:
-- Resource definitions
-- Variables file
-- Outputs
-- Backend configuration
-- Cost estimates
-```
-
-### Monitoring Setup
-
-```text
-Create monitoring configuration for [service]:
-
-Monitoring platform: [DataDog/New Relic/Prometheus]
-
-Metrics to track:
-- Application metrics: [response time, error rate, throughput]
-- Infrastructure metrics: [CPU, memory, disk]
-- Business metrics: [user signups, transactions, etc]
-
-Create:
-- Dashboard configuration
-- Alert rules with thresholds
-- Notification channels
-- Runbook links
-
-Base thresholds on:
-[paste current baseline metrics or SLAs]
-```
-
-### Incident Response Runbook
-
-```text
-Create an incident response runbook for [service]:
-
-Include sections:
-1. Service Overview
-   - Architecture diagram
-   - Dependencies
-   - Key metrics
-
-2. Common Issues
-   - Symptom: [description]
-   - Likely cause
-   - Resolution steps
-   - Verification
-
-3. Escalation
-   - When to escalate
-   - Who to contact
-   - Information to provide
-
-4. Recovery Procedures
-   - Rollback steps
-   - Data recovery
-   - Failover process
-
-5. Post-Incident
-   - Log locations
-   - Metrics to review
-   - Report template
-```
-
-### Capacity Planning
-
-```text
-Analyze capacity needs for [service]:
-
-Current metrics:
-- Daily active users: [number]
-- Peak QPS: [number]
-- Data growth rate: [GB/month]
-- Current infrastructure: [describe]
-
-Growth projections:
-- 6 months: [expected metrics]
-- 1 year: [expected metrics]
-- 2 years: [expected metrics]
-
-Provide:
-- Resource requirements for each timeframe
-- Scaling strategy (vertical vs horizontal)
-- Cost projections
-- Migration plan if needed
-- Risk assessment
-```
-
----
-
 ## Livefront-Specific Patterns
 
 ### Accessibility Audit
@@ -712,6 +558,6 @@ Found a prompt that works great? Share it!
 2. Document what it's for
 3. Include any context needed
 4. Add it to the appropriate section
-5. Share in #ai-prompts Slack channel
+5. Share in #dev-ai Slack channel
 
 Remember: The best prompts are the ones that save your teammates time.

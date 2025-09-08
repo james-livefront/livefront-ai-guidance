@@ -4,7 +4,9 @@
 
 This guide helps you integrate AI into your development workflow while maintaining Livefront's engineering standards. Based on 6+ months of real team experience.
 
-**Read Time**: 45 minutes total (or jump to what you need)
+**Tool Agnostic**: These principles work with any AI tool - Claude, ChatGPT, Copilot, Gemini, or local models. Pick what works for your team and security requirements.
+
+**Read Time**: Full guide or jump to what you need
 
 ---
 
@@ -12,16 +14,15 @@ This guide helps you integrate AI into your development workflow while maintaini
 
 ### Core Learning Path (Read in Order)
 
-1. **[Foundation](01-foundation.md)** *(10 min)* - Mindset shift and the 70% problem
-2. **[Getting Started](02-getting-started.md)** *(15 min)* - Day 1 checklist and first week
-3. **[SDLC Integration](03-sdlc-integration.md)** *(20 min)* - AI across every development phase
+1. **[Foundation](01-foundation.md)** - Mindset shift and the 70% problem
+2. **[Getting Started](02-getting-started.md)** - Day 1 checklist and first week
+3. **[SDLC Integration](03-sdlc-integration.md)** - AI across every development phase
 
 ### Reference Materials
 
 1. **[Prompt Library](04-prompt-library.md)** - 40+ tested prompts to copy and use
-2. **[Problems to Avoid](05-problems-to-avoid.md)** - Critical anti-patterns and how to prevent them
+2. **[Problems to Avoid](05-problems-to-avoid.md)** - Complete anti-pattern guide with failure modes
 3. **[Context Examples](06-context-examples.md)** - Good vs bad context engineering patterns
-4. **[Case Studies](07-case-studies.md)** - Livefront projects with metrics
 
 ---
 
@@ -29,11 +30,11 @@ This guide helps you integrate AI into your development workflow while maintaini
 
 ### Engineers: Your First Day
 
--> Jump to [Day 1 Checklist](02-getting-started.md#day-1-setup-and-first-wins-2-hours)
+-> Jump to [Day 1 Checklist](02-getting-started.md#day-1-setup-and-first-wins)
 
 ### Team Leads: Enable Your Team
 
--> See [Implementation Checklist](#implementation-checklist) below
+-> See [Setup Checklist](#setup-checklist) below
 
 ### Need a Specific Prompt?
 
@@ -41,7 +42,7 @@ This guide helps you integrate AI into your development workflow while maintaini
 
 ---
 
-## Implementation Checklist
+## Setup Checklist
 
 ### Individual Developer (Week 1-4)
 
@@ -74,6 +75,14 @@ This guide helps you integrate AI into your development workflow while maintaini
 - [ ] Track velocity improvements
 - [ ] Report ROI to leadership
 
+### Managing Junior Developers
+
+- Enforce the 15-minute rule before AI assistance
+- Review their AI-generated code extra carefully
+- Pair them with seniors, not just with AI
+- Test their ability to code without AI monthly
+- If they can't explain it, they can't ship it
+
 ---
 
 ## Key Principles
@@ -92,6 +101,15 @@ AI gets you 70% there quickly. The last 30% requires human expertise. That 30% i
 - Code reviews: 100%
 - Defect rate: <2%
 - Accessibility: WCAG 2.1 AA
+
+### How Do You Know It's Working?
+
+Simple: Fewer bugs in production, faster cycle time, team still enjoys coding.
+If any of these decline, reassess your AI usage.
+
+### For Junior Developers
+
+AI accelerates learning but can prevent understanding. Use the 15-minute rule: try solving manually first. If you can't explain what AI generated, don't ship it.
 
 ---
 
@@ -129,7 +147,20 @@ Or run the setup script:
 
 - **Slack**: #dev-ai
 - **Maintainer**: James Fishwick
-- **Version**: 1.0 (September 2025)
+- **Version**: 1.1.0 (January 2025)
+
+## Versioning
+
+This guide uses semantic versioning with automatic version bumping:
+
+**In commit messages, use:**
+
+- `[major]` or `[breaking]` - Breaking changes (2.0.0)
+- `[minor]` or `[feature]` - New sections/content (1.2.0)
+- `[patch]` or `[fix]` - Fixes and clarifications (1.1.1)
+- No tag = patch bump by default
+
+**Example:** `git commit -m "[minor] Add new debugging section"`
 
 ---
 

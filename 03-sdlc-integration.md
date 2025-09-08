@@ -2,7 +2,7 @@
 
 ## How AI Changes Each Phase of Development
 
-Here's how AI might integrate into each phase of development at Livefront, with real examples and concrete guidance.
+Here's how AI might integrate into each phase of development at Livefront, with examples and concrete guidance.
 
 ---
 
@@ -79,12 +79,6 @@ Consider mobile vs web differences
 - **Stakeholder alignment**: AI can't attend meetings for you
 - **Domain expertise**: AI doesn't know your client's industry nuances
 - **Priority decisions**: What's MVP vs nice-to-have requires human judgment
-
-### Success Metrics
-
-- Requirements clarified before sprint planning: +40%
-- Edge cases caught before development: +60%
-- Rework due to misunderstood requirements: -50%
 
 ---
 
@@ -218,8 +212,6 @@ Include:
 - Unit test file
 - Storybook story
 ```
-
-**Possible time saved (illustrative)**: ~45 -> ~5 minutes per component
 
 #### 2. Business Logic Implementation
 
@@ -410,19 +402,19 @@ Use our page object pattern:
 
 ### The Testing Pyramid with AI
 
-#### Unit Tests (AI: 90%, Human: 10%)
+#### Unit Tests
 
 - AI generates test structure and cases
 - Human verifies business logic assertions
 - AI maintains as code changes
 
-#### Integration Tests (AI: 70%, Human: 30%)
+#### Integration Tests
 
 - AI generates API mocks and test flows
 - Human ensures correct service interactions
 - Human validates data transformations
 
-#### E2E Tests (AI: 50%, Human: 50%)
+#### E2E Tests
 
 - AI generates test scripts
 - Human defines critical user journeys

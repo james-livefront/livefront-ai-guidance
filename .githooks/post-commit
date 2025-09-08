@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Post-commit hook: Auto-bump version based on commit message
+
+# Only run if VERSION file exists (indicates versioning is set up)
+if [ ! -f "VERSION" ]; then
+    exit 0
+fi
+
+# Get the commit message
+COMMIT_MSG=$(git log -1 --pretty=%B)
+
+# Check if this commit already has version bump (avoid loops)
+if git diff HEAD~1 HEAD --name-only 2>/dev/null | grep -q "VERSION"; then
+    exit 0
+fi
+
+# Check if commit message has version bump tags
+if echo "$COMMIT_MSG" | grep -qiE '\[(major|minor|patch|breaking|feature|fix)\]'; then
+    # Run version bump script
+    bash scripts/bump-version.sh "$COMMIT_MSG"
+    
+    # Amend the commit to include version changes (without triggering hook again)
+    git commit --amend --no-edit --no-verify
+    
+    # Extract version for tagging
+    NEW_VERSION=$(cat VERSION)
+    COMMIT_TITLE=$(echo "$COMMIT_MSG" | head -n1 | sed -E 's/\[(major|minor|patch|breaking|feature|fix)\]//g' | xargs)
+    
+    # Create git tag
+    git tag -a "v${NEW_VERSION}" -m "Version ${NEW_VERSION}: ${COMMIT_TITLE}"
+    echo "✓ Tagged as v${NEW_VERSION}"
+fi

@@ -1,27 +1,26 @@
 # Part II: Getting Started - Your First Week
 
-## Day 1: Setup and First Wins (2 hours)
+## Day 1: Setup and First Wins
 
-### Morning: Tool Setup (30 minutes)
+### Morning: Tool Setup
 
 #### The Essentials Checklist
 
-- [ ] Install GitHub Copilot (or alternative) in your IDE
+- [ ] Install your AI coding assistant of choice in your IDE
   - Verify it's working: Type `// Function to` and see if suggestions appear
-- [ ] Install AI chat tool (pick one):
-  - [ ] Claude.ai (best for complex reasoning)
-  - [ ] ChatGPT (best for general coding)
-  - [ ] Gemini (best if using Google Cloud)
+- [ ] Set up an AI chat tool for complex tasks
+  - This guide is tool-agnostic - use whatever works for your team
+  - The principles apply whether you're using Claude, ChatGPT, Gemini, or local models
 - [ ] Bookmark this guide and the prompt library
 - [ ] Join #dev-ai Slack channel
 
-#### Security Setup (10 minutes)
+#### Security Setup
 
 - [ ] Read the one-page security rules (Appendix A)
 - [ ] Install or configure password manager for API keys
 - [ ] Set up separate browser profile for AI tools (keeps client work isolated)
 
-### Late Morning: Your First AI Win (45 minutes)
+### Late Morning: Your First AI Win
 
 #### Exercise: The Unit Test Challenge
 
@@ -32,7 +31,7 @@
 3. **Use this prompt**:
 
    ```text
-   Generate comprehensive unit tests for this TypeScript function using Jest:
+   Generate unit tests for this TypeScript function using Jest:
    [paste your function]
 
    Include:
@@ -53,9 +52,31 @@
    - Fix any syntax issues
    - Run and see coverage
 
-**Success Metric**: If you got even 50% useful tests in <10 minutes, you've just experienced the value.
+**Success Metric**: If you got even 50% useful tests quickly, you've just experienced the value.
 
-### Afternoon: Your First Real Task (45 minutes)
+### ⚠️ Junior Developers: Build Your Foundation First
+
+**Before relying on AI:**
+
+- Solve problems manually first (15 min minimum)
+- Understand what AI generates before using it
+- Maintain one AI-free day per week
+- If you can't explain it, don't ship it
+
+AI accelerates learning but can prevent understanding. Use it to explore, not to skip fundamentals.
+
+### ⌨️ Try This Now: The Reality Check
+
+**Goal**: Test if AI-generated code actually works
+**Time**: 2 minutes
+**Do this**:
+
+1. Take one AI-generated test from above
+2. Run it without any modifications
+3. Does it even execute? Does it pass?
+**Success looks like**: Test needs fixes, but the structure is solid
+
+### Afternoon: Your First Real Task
 
 #### Exercise: The Component Speed Run
 
@@ -67,7 +88,7 @@ Pick something from your current sprint that's:
 - Well-defined (clear requirements)
 - Low-risk (not critical path)
 
-1. **Write the specification** (10 min):
+1. **Write the specification**:
 
    ```text
    Create a [component name] that:
@@ -78,25 +99,24 @@ Pick something from your current sprint that's:
    - Constraints: [performance, accessibility, etc.]
    ```
 
-2. **Generate with AI** (5 min):
+2. **Generate with AI**:
    - Add your tech stack context
    - Include a similar component as pattern reference
    - Generate the code
 
-3. **Review and Refine** (20 min):
+3. **Review and Refine**:
    - Does it match requirements?
    - Check accessibility
-   - Verify prop types
    - Test the edge cases
 
-4. **Integration** (10 min):
+4. **Integration**:
    - Add to your project
    - Connect to live data
    - Verify it works
 
-**Success Metric**: If you completed in <1 hour what normally takes 2-3 hours, you're on track.
+**Success Metric**: If you completed it significantly faster than usual, you're on track.
 
-### End of Day: Reflection (15 minutes)
+### End of Day: Reflection
 
 Document your experience:
 
@@ -133,18 +153,18 @@ Each day, use AI for at least three tasks:
 
 ### Daily Habits to Build
 
-#### Start Each Task with the Question:
+#### Start Each Task with the Question
 
 "Could AI do the boring part of this?"
 
-#### The Two-Minute Rule:
+#### The Two-Minute Rule
 
 If you think AI might help, spend 2 minutes trying.
 
 - If it works: Continue
 - If it doesn't: Move on, note why
 
-#### Document What Works:
+#### Document What Works
 
 Keep a prompt journal:
 
@@ -170,14 +190,14 @@ Keep a prompt journal:
 1. Pick a project with poor documentation
 2. Feed AI the main files and ask for README
 3. Edit for accuracy and tone
-4. Time saved: ~2 hours -> 30 minutes
+4. Note the efficiency gain
 
 **Afternoon Exercise**: API Documentation
 
 1. Point AI at your endpoints
 2. Generate OpenAPI/Swagger docs
 3. Review for accuracy
-4. Time saved: ~3 hours -> 45 minutes
+4. Note the efficiency gain
 
 #### Testing Day (Day 5)
 
@@ -200,7 +220,7 @@ Generate 20 realistic user profiles for testing with:
 
 ### End of Week Checkpoint
 
-#### You Should Now Be Able To:
+#### You Should Now Be Able To
 
 - [ ] Generate boilerplate code in seconds
 - [ ] Create comprehensive tests quickly
@@ -208,13 +228,19 @@ Generate 20 realistic user profiles for testing with:
 - [ ] Debug with AI assistance
 - [ ] Recognize when AI will/won't help
 
-#### Metrics to Track:
+#### Metrics to Track
 
 - Tasks attempted with AI: ___
 - Success rate: ___%
-- Average time saved: ___ hours
 - Quality issues introduced: ___
 - Most useful discovery: ___________
+
+#### Red Flags - Stop Using AI If
+
+- Defect escape rate >20%
+- PR rejection rate >30%
+- Team says quality is suffering
+- You can't code without it
 
 ---
 
@@ -222,7 +248,7 @@ Generate 20 realistic user profiles for testing with:
 
 ### Week 2: Advanced Patterns
 
-#### Focus Areas:
+#### Focus Areas
 
 - Multi-file refactoring
 - Architecture discussions
@@ -281,23 +307,33 @@ Each day, attempt one task you think is "too complex for AI"
 
 By end of Week 1, you should have identified:
 
-### Your Green Zone (Always Use AI):
+### Your Green Zone (Always Use AI)
 
 - [ ] Task type: ________________
 - [ ] Task type: ________________
 - [ ] Task type: ________________
 
-### Your Red Zone (Never Use AI):
+### Your Red Zone (Never Use AI)
 
 - [ ] Task type: ________________
 - [ ] Task type: ________________
 - [ ] Task type: ________________
 
-### Your Yellow Zone (Case-by-Case):
+### Your Yellow Zone (Case-by-Case)
 
 - [ ] Task type: ________________
 - [ ] Task type: ________________
 - [ ] Task type: ________________
+
+### Weekly Reality Check
+
+Every Friday, ask yourself:
+
+- Can I still code without AI?
+- Is our defect rate stable?
+- Is the team happier or more stressed?
+
+If any answer concerns you, dial back AI usage.
 
 ---
 
@@ -315,7 +351,7 @@ Remember: This isn't a race. Better to build solid habits slowly than rush and d
 
 ## Appendix: Advanced Exercises
 
-### Intermediate: Feature Implementation (2 hours)
+### Intermediate: Feature Implementation
 
 #### Build a complete feature with AI assistance
 
@@ -328,7 +364,7 @@ Remember: This isn't a race. Better to build solid habits slowly than rush and d
 
 **Success metrics**: Working component, full test coverage, accessibility compliant
 
-### Advanced: Architecture Planning (3 hours)
+### Advanced: Architecture Planning
 
 #### Design a new microservice with AI collaboration
 
@@ -341,7 +377,7 @@ Remember: This isn't a race. Better to build solid habits slowly than rush and d
 
 **Key insight**: AI suggests options, you make decisions
 
-### Expert: Cross-Platform Implementation (4 hours)
+### Expert: Cross-Platform Implementation
 
 #### Same feature for Web, iOS, and Android
 
