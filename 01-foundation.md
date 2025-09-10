@@ -111,7 +111,8 @@ That 30% is why clients hire Livefront.
 2. Ask AI to recreate it from just the component name
 3. Compare what AI generated vs your actual implementation
 4. Note what AI got right (structure) vs wrong (business logic)
-   **Success looks like**: AI nailed the boilerplate but missed YOUR specific requirements
+
+**Success looks like**: AI nailed the boilerplate but missed YOUR specific requirements
 
 ## Where AI Consistently Fails
 
