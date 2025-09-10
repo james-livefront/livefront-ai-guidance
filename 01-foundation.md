@@ -81,7 +81,7 @@ The emerging rule of thumb: AI consistently gets you 70% of the way there. This 
 
 ### Example: The Date Picker Component
 
-_[From hypothetical healthcare client project]_
+*[From hypothetical healthcare client project]*
 
 **What AI can Deliver (70%)**:
 
