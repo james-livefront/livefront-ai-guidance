@@ -16,7 +16,7 @@
 
 #### Security Setup
 
-- [ ] Read the one-page security rules (Appendix A)
+- [ ] Read the security rules (Part 1: Foundation)
 - [ ] Install or configure password manager for API keys
 - [ ] Set up separate browser profile for AI tools (keeps client work isolated)
 
