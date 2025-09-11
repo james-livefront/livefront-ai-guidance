@@ -110,8 +110,9 @@ That 30% is why clients hire Livefront.
 1. Pick any component from your current project
 2. Ask AI to recreate it from just the component name
 3. Compare what AI generated vs your actual implementation
-4. Note what AI got right (structure) vs wrong (business logic)
-   **Success looks like**: AI nailed the boilerplate but missed YOUR specific requirements
+4. Note what AI got right (structure) vs wrong (business logic)  
+
+**Success looks like**: AI nailed the boilerplate but missed YOUR specific requirements
 
 ## Where AI Consistently Fails
 
@@ -168,20 +169,15 @@ The code is just the output. The thinking is still the job.
 
 ## Security First: Never Compromise
 
-### Never Share in Prompts
+### Use of Confidential Information with AI Tools
 
-- **API keys/secrets** - Not even "example" keys from production
-- **Customer data** - No actual names, emails, or PII
-- **Client names** - Keep projects anonymous
-- **Proprietary algorithms** - Core business logic stays private
-- **Production URLs** - Use localhost or example.com
+Livefront's handbook permits the use of confidential information—including client names, source code, and other sensitive materials with [pre-approved AI tools](https://www.notion.so/livefront/10-AI-Tools-2249880e7bad8046a82ae60d337d1434?source=copy_link) (such as OpenAI Codex, GitHub Copilot, or other tools explicitly authorized by Livefront). This exception is intended to enable productivity and innovation while maintaining strict security standards.
 
-### Always Sanitize
+**Key points:**
 
-- Replace actual values with placeholders
-- Use generic examples (<user123@example.com>)
-- Strip identifying information
-- Create fictional scenarios that mirror practical problems
+- Never share confidential data with unapproved tools, platforms, or services.
+- If unsure about what is permitted, consult your manager.
+- One leaked API key or customer record can destroy trust instantly.
 
 ### Zero TODOs Policy with AI
 
@@ -189,9 +185,7 @@ AI may suggest adding TODOs - don't accept them. If AI identifies needed work:
 
 1. Create a ticket immediately
 2. Link it in the code comment
-3. Never let AI-generated technical debt hide
-
-One leaked API key or customer record can destroy trust instantly.
+3. Never let AI-generated technical debt
 
 ---
 
