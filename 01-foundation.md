@@ -81,7 +81,7 @@ The emerging rule of thumb: AI consistently gets you 70% of the way there. This 
 
 ### Example: The Date Picker Component
 
-*[From hypothetical healthcare client project]*
+_[From hypothetical healthcare client project]_
 
 **What AI can Deliver (70%)**:
 
@@ -110,7 +110,7 @@ That 30% is why clients hire Livefront.
 1. Pick any component from your current project
 2. Ask AI to recreate it from just the component name
 3. Compare what AI generated vs your actual implementation
-4. Note what AI got right (structure) vs wrong (business logic)
+4. Note what AI got right (structure) vs wrong (business logic)  
 
 **Success looks like**: AI nailed the boilerplate but missed YOUR specific requirements
 
@@ -193,4 +193,4 @@ AI may suggest adding TODOs - don't accept them. If AI identifies needed work:
 
 If this resonates, move to Part II: Getting Started. We'll get you set up with tools and scoring your first wins within a day.
 
-If you're skeptical, that's healthy. Try it for a week with our guidance. Measure the results. Keep what works, discard what doesn't.
+If you're skeptical, that's healthy. Try it for a week with our guidance. Measure the results (see: 07-measurement.md). Keep what works, discard what doesn't.
