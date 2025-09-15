@@ -6,11 +6,35 @@ AI tools are here. They're powerful. They're also imperfect.
 
 At Livefront, we've spent months integrating AI into our workflow, observing results, and learning what works. This guide distills those learnings into practical guidance that maintains our engineering standards while leveraging new capabilities.
 
+## Choose Your Adoption Level
+
+This guide presents various AI integration strategies. Teams and individuals should choose what works for them:
+
+### Minimal Integration
+
+- Use AI for documentation and test generation only
+- Manual coding remains primary approach
+- AI as occasional reference tool
+
+### Balanced Integration
+
+- AI assists with boilerplate and repetitive tasks
+- Manual coding for business logic and critical paths
+- Regular AI-assisted code reviews
+
+### Comprehensive Integration
+
+- AI-first approach for initial drafts
+- Heavy focus on prompt engineering
+- Manual refinement and quality control
+
+**There is no "right" level** - choose based on your team's comfort, project requirements, and client expectations.
+
 ## What Changes
 
 ### You Become an Orchestrator
 
-Instead of writing every line, you're now directing, reviewing, and refining. Think of yourself as a senior engineer with a very capable but inexperienced junior developer(s) who:
+You remain a hands-on developer who now has access to powerful assistive tools. Think of AI like a sophisticated IDE - it accelerates certain tasks but doesn't replace your coding expertise. You'll still write plenty of code, especially the complex, creative, and critical parts. Think of yourself as a senior engineer with a very capable but inexperienced junior developer(s) who:
 
 - Works 24/7 without getting tired
 - Has seen millions of code patterns
@@ -144,27 +168,15 @@ Let's be explicit about AI's blind spots:
 
 ## The New Mental Model
 
-Stop thinking: "How do I code this?"
-Start thinking: "How do I get this coded correctly?"
+Expand your thinking from: "How do I code this?"
+To include: "What's the most meaningful way to solve this problem?"
 
 This means:
 
-1. **Specification becomes critical** - The better you describe what you need, the better the output
-2. **Review skills matter more than syntax** - Can you spot subtle bugs in familiar-looking code?
-3. **Architecture decisions are more valuable** - AI won't make these for you
-4. **Domain knowledge is your differentiator** - Understanding the client's world
-
-## The Livefront Way with AI
-
-We're not trying to replace engineers with AI. We're using AI to make our engineers more effective at what matters:
-
-- Understanding client needs
-- Designing elegant solutions
-- Ensuring quality and accessibility
-- Mentoring and growing teams
-- Solving interesting problems
-
-The code is just the output. The thinking is still the job.
+- Using AI for boilerplate so you can focus on creative solutions
+- Spending less time on syntax, more time understanding the business problem
+- Writing the critical code yourself while delegating the repetitive parts
+- Deeper engagement with why we're building, not just what
 
 ## Security First: Never Compromise
 
