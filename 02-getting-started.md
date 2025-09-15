@@ -54,11 +54,11 @@
 
 **Success Metric**: If you got even 50% useful tests quickly, you've just experienced the value.
 
-### ⚠️ Junior Developers: Build Your Foundation First
+### Build Your Foundation First
 
 **Before relying on AI:**
 
-- Solve problems manually first (15 min minimum)
+- Solve problems manually first
 - Understand what AI generates before using it
 - Maintain one AI-free day per week
 - If you can't explain it, don't ship it
