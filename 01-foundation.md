@@ -12,7 +12,7 @@ This guide presents various AI integration strategies. Teams and individuals sho
 
 ### Minimal Integration
 
-- Use AI for documentation and test generation only
+- AI for non-logical, non-production code purposes (e.g. debugging, writing documentation and tests, etc.)
 - Manual coding remains primary approach
 - AI as occasional reference tool
 
