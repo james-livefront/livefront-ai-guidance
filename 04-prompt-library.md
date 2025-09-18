@@ -6,6 +6,53 @@ Please copy, customize, and share your own successful prompts!
 
 ---
 
+## Prompt Scope & Ownership
+
+Understanding the right scope for your prompts helps ensure they're useful and findable:
+
+### Company-wide Prompts
+
+These are useful across all teams and projects at Livefront. They typically cover:
+
+- Universal code quality practices (reviews, refactoring, testing)
+- Common technical patterns (APIs, databases, security)
+- Livefront-specific standards (engineering tenents, accessibility, etc.)
+
+### Platform-level Prompts
+
+Tailored to specific platforms' workflows, tech stacks, or domains:
+
+- **Mobile Team**: React Native components, platform-specific debugging
+- **Backend Team**: Database optimization, API design patterns
+- **Frontend Team**: Framework-specific patterns, performance optimization
+- **DevOps Team**: Infrastructure, deployment, monitoring
+
+### Individual Prompts
+
+Personal productivity boosters or highly specialized prompts:
+
+- Domain expertise (specific industries, regulations)
+- Personal workflow optimizations
+- Experimental or niche techniques
+
+### Contributing Guidelines by Scope
+
+**When adding a prompt:**
+
+1. **Identify the scope**: Who would benefit from this prompt?
+2. **Place appropriately**: Company prompts go first, then platform, then individual
+3. **Include context**: Especially for platform/individual prompts
+
+**Evolution**: If your individual or platform prompt proves broadly useful, move it up in scope!
+
+> **Note on Organization**: As our prompt library grows, this organizational structure may need to evolve. We might add subcategories within platforms, create cross-platform sections, or develop new groupings based on common use patterns. The goal is to keep prompts discoverable and useful as our collection scales.
+
+---
+
+## Company-wide Prompts
+
+> These prompts are useful across all teams and projects at Livefront.
+
 ## Architecture & Design
 
 ### System Architecture Design
@@ -363,33 +410,6 @@ Provide:
 - How to prevent this in future
 ```
 
-### React Native Specific Debugging
-
-```text
-Debug this React Native issue:
-
-Platform: [iOS/Android/Both]
-RN Version: [version]
-Error: [paste error]
-When it happens: [describe trigger]
-
-Relevant code:
-[paste component/code]
-
-Metro output:
-[paste if relevant]
-
-Native logs:
-[paste if available]
-
-Consider:
-- Platform differences
-- Native module issues
-- Metro bundler cache
-- Linking issues
-- Version mismatches
-```
-
 ---
 
 ## DevOps & Deployment
@@ -511,6 +531,129 @@ Flag any compliance issues with severity.
 
 ---
 
+## Platform-level Prompts
+
+> These prompts are tailored to specific platforms' workflows and tech stacks.
+
+### Mobile Team
+
+#### React Native Specific Debugging
+
+```text
+Debug this React Native issue:
+
+Platform: [iOS/Android/Both]
+RN Version: [version]
+Error: [paste error]
+When it happens: [describe trigger]
+
+Relevant code:
+[paste component/code]
+
+Metro output:
+[paste if relevant]
+
+Native logs:
+[paste if available]
+
+Consider:
+- Platform differences
+- Native module issues
+- Metro bundler cache
+- Linking issues
+- Version mismatches
+```
+
+### Frontend Team
+
+#### Component Accessibility Audit
+
+```text
+Audit this web component for accessibility:
+[paste component code]
+
+Framework: [React/Vue/Angular]
+Check against WCAG 2.1 Level AA:
+- Semantic HTML usage
+- ARIA labels and roles
+- Keyboard navigation
+- Screen reader compatibility
+- Color contrast
+- Focus management
+- Error announcements
+
+Output:
+- Issues found (with WCAG criterion)
+- How to fix each issue
+- Code examples of fixes
+```
+
+### Backend Team
+
+#### Database Performance Analysis
+
+```text
+Analyze this database query for performance:
+[paste query and schema]
+
+Database: [PostgreSQL/MySQL/MongoDB]
+Expected load: [QPS]
+Current performance: [if known]
+
+Identify:
+- Query optimization opportunities
+- Index recommendations
+- Schema improvements
+- Caching strategies
+- Connection pooling needs
+
+Provide specific recommendations with expected impact.
+```
+
+### DevOps Team
+
+#### Infrastructure Scaling Strategy
+
+```text
+Design a scaling strategy for:
+[describe current infrastructure]
+
+Current metrics:
+- Traffic: [requests/day]
+- Growth rate: [% per month]
+- Budget: [constraints]
+
+Requirements:
+- Target load: [future scale]
+- Availability: [SLA]
+- Geographic distribution: [regions]
+
+Provide:
+- Current bottlenecks
+- Scaling approach (horizontal/vertical)
+- Technology recommendations
+- Cost projections
+- Migration timeline
+```
+
+---
+
+## Individual Prompts
+
+> Personal productivity boosters and specialized prompts contributed by team members.
+
+### Example Individual Prompt Template
+
+```text
+[Your prompt text here]
+
+Context: [Specific use case, project, or domain expertise]
+```
+
+_Feel free to add your own individual prompts below this section!_
+
+---
+
 ## Tips for Custom Prompts
 
 ### Structure for Success
@@ -554,10 +697,29 @@ If your prompt is over 20 lines, consider breaking it into steps:
 
 Found a prompt that works great? Share it!
 
-1. Test it at least 3 times
-2. Document what it's for
-3. Include any context needed
-4. Add it to the appropriate section
-5. Share in #dev-ai Slack channel
+### Contributing Guidelines by Scope
+
+**Company-wide prompts:**
+
+1. Test it at least three times and get feedback from others
+2. Ensure it's useful across multiple projects/tech stacks
+3. Document any required context clearly
+4. Add to the Company-wide section
+
+**Platform-level prompts:**
+
+1. Test within your platform team first
+2. Include platform context and tech stack details
+3. Use the scope template at the top of your prompt
+4. Add to your platform's subsection
+
+**Individual prompts:**
+
+1. Share experimental or highly specialized prompts
+2. Include your name and specific use case context
+3. Others can adapt or promote to broader scope if useful
+
+**Additional sharing**:  
+Share in the `#dev-ai` Slack channel.
 
 Remember: The best prompts are the ones that save your teammates time.
