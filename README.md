@@ -77,7 +77,7 @@ This guide helps you integrate AI into your development workflow while maintaini
 
 ### Managing Junior Developers
 
-- Enforce the 15-minute rule before AI assistance
+- Enforce the 30-minute rule before AI assistance
 - Review their AI-generated code extra carefully
 - Pair them with seniors, not just with AI
 - Test their ability to code without AI monthly
@@ -109,7 +109,7 @@ If any of these decline, reassess your AI usage.
 
 ### For Junior Developers
 
-AI accelerates learning but can prevent understanding. Use the 15-minute rule: try solving manually first. If you can't explain what AI generated, don't ship it.
+AI accelerates learning but can prevent understanding. Use the 30-minute rule: try solving manually first. If you can't explain what AI generated, don't ship it.
 
 ---
 
