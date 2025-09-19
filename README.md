@@ -87,6 +87,20 @@ This guide helps you integrate AI into your development workflow while maintaini
 
 ## Key Principles
 
+## Our Philosophy on AI in Development
+
+Livefront believes that exceptional software comes from developers who understand business needs AND enjoy their craft. AI is a tool that should enhance both.
+
+We value:
+
+- **Business understanding** supported by technical excellence
+- **Meaningful coding** over repetitive typing
+- **Developer joy** in solving real problems
+- **Time spent on** creative solutions, not boilerplate
+- **Deep engagement** with both code and client needs
+
+AI should free you to do more of what you love about development, not less.
+
 ### The 70% Problem
 
 AI gets you 70% there quickly. The last 30% requires human expertise. That 30% is why clients hire Livefront.
@@ -117,9 +131,8 @@ AI accelerates learning but can prevent understanding. Use the 30-minute rule: t
 
 Found something that works? Share it:
 
-1. Add to [Prompt Library](04-prompt-library.md)
-2. Share in #dev-ai
-3. Open a PR with improvements
+1. Share in #dev-ai
+2. Open a PR with improvements
 
 ### Local Checks
 
