@@ -1,6 +1,34 @@
-# Problems to Avoid: The Complete Anti-Pattern Guide
+# Maintaining Excellence: Quality Standards and Common Pitfalls
 
-*Learn from our mistakes. These are the traps every team hits when adopting AI.*
+## Our Immutable Quality Standards
+
+Before discussing AI tools, let's be clear: these standards never change, regardless of how code is produced.
+
+### Every Line We Ship Must Be:
+
+1. **Fully Understood** - You can explain it to a junior developer
+2. **Properly Tested** - ≥80% coverage, edge cases included
+3. **Performant** - Meets defined performance budgets
+4. **Accessible** - WCAG 2.1 AA compliant
+5. **Secure** - No exposed credentials, validated inputs
+6. **Maintainable** - Follows team patterns and conventions
+7. **Reviewed** - Another human has verified it meets standards
+
+### The Non-Negotiables
+
+- **Code Review**: 100% of code reviewed before merge
+- **Documentation**: Every public API documented
+- **Testing**: No merge without passing tests
+
+### The Developer's Responsibility
+
+Whether you write code manually, generate it with AI, copy it from Stack Overflow, or adapt it from examples - **you own it**. "The AI wrote it" is never an acceptable excuse for substandard code.
+
+---
+
+## How AI Tools Can Threaten These Standards
+
+Now that we've established what excellence looks like, here are the patterns that can undermine it when using AI tools...
 
 ---
 
@@ -158,6 +186,21 @@ Start simple. You can always add complexity later.
 
 ### Quality Degradation
 
+Before we discuss what can go wrong, here's your quality checklist for ANY code, regardless of origin:
+
+**The Pre-Commit Checklist:**
+
+- [ ] I understand every line
+- [ ] It follows our patterns
+- [ ] Tests are comprehensive
+- [ ] Performance is acceptable
+- [ ] Accessibility is verified
+- [ ] No security risks
+- [ ] Documentation is complete
+- [ ] I'd be proud to explain this in a team review
+
+If you can't check every box, the code isn't ready - whether you wrote it manually or used AI.
+
 #### What It Looks Like
 
 Your code works but it's getting worse. More bugs in production. Code reviews take longer. The codebase becomes a patchwork of AI-generated snippets.
@@ -254,7 +297,7 @@ Junior developers never struggle, never learn fundamentals. They can't code with
 
 #### The Solution: Deliberate Learning Protocol
 
-**The 15-Minute Rule**: Try solving for 15 minutes before asking AI
+**The 30-Minute Rule**: Try solving for 30+ minutes before asking AI
 
 **The Explanation Test**:
 
@@ -312,29 +355,9 @@ Add your own uncertainty:
 
 ---
 
-## Emergency Protocols
-
-### Pull the Emergency Brake When
-
-- Security leak potential detected
-- Quality metrics drop below standards
-- Team member can't code without AI
-- Client expresses concerns
-- Production incidents increase
+## Team Health
 
 ### Key Metrics That Matter
-
-**Defect Escape Rate** = Bugs in production / Total bugs
-
-- Healthy: <10%
-- Warning: 10-20%
-- Emergency: >20%
-
-**PR Rejection Rate** = PRs needing major rework / Total PRs
-
-- Healthy: <20%
-- Warning: 20-30%
-- Emergency: >30%
 
 **The 2-Week Experiment**
 
