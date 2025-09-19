@@ -16,7 +16,6 @@ Before discussing AI tools, let's be clear: these standards never change, regard
 
 ### The Non-Negotiables
 
-- **Defect Rate**: <2% escape to production
 - **Code Review**: 100% of code reviewed before merge
 - **Documentation**: Every public API documented
 - **Testing**: No merge without passing tests
