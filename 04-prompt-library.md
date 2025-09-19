@@ -716,7 +716,7 @@ Found a prompt that works great? Share it!
 **Individual prompts:**
 
 1. Share experimental or highly specialized prompts
-2. Include your name and specific use case context
+2. Include an overview of the specific use case the prompt covers
 3. Others can adapt or promote to broader scope if useful
 
 **Additional sharing**:  
