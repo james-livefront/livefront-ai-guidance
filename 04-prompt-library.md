@@ -659,7 +659,6 @@ The ticket should include:
 - **Description**: A detailed explanation of the endpoint, including its purpose, request/response structure, and reference to the spec.
 - **Acceptance Criteria**: Clearly defined conditions for completion (e.g., endpoint returns expected responses, adheres to error handling, passes tests).
 - **Technical Details**: Any relevant implementation notes, authentication/authorization requirements, or dependencies.
-- **Priority/Labels**: Suggest an appropriate priority level and relevant tags.
 
 The goal of the ticket is to implement an endpoint that facilitates the request/response defined in the specification.
 
