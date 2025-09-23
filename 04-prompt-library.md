@@ -650,6 +650,25 @@ Provide:
 Context: [Specific use case, project, or domain expertise]
 ```
 
+### OpenAPI to Jira Ticket Generator
+
+```text
+From the following OpenAPI/Swagger specification, generate a Jira ticket.
+The ticket should include:
+- **Summary**: A concise title for the endpoint being created.
+- **Description**: A detailed explanation of the endpoint, including its purpose, request/response structure, and reference to the spec.
+- **Acceptance Criteria**: Clearly defined conditions for completion (e.g., endpoint returns expected responses, adheres to error handling, passes tests).
+- **Technical Details**: Any relevant implementation notes, authentication/authorization requirements, or dependencies.
+- **Priority/Labels**: Suggest an appropriate priority level and relevant tags.
+
+The goal of the ticket is to implement an endpoint that facilitates the request/response defined in the specification.
+
+OpenAPI Spec:
+<OpenAPI Spec>
+```
+
+Context: API development workflow - useful for converting OpenAPI specifications into actionable development tasks
+
 _Feel free to add your own individual prompts below this section!_
 
 ---
