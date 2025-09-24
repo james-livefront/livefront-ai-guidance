@@ -112,32 +112,6 @@ Follow REST best practices and use consistent naming.
 
 ## Implementation
 
-### React Native Component Generation
-
-```text
-Create a React Native component:
-
-Component: [name]
-Purpose: [what it does]
-Props: [list with TypeScript types]
-
-Requirements:
-- TypeScript with strict mode
-- Styled-components for styling
-- Full accessibility support
-- Handle loading/error/empty states
-- Memoization where appropriate
-
-Follow this pattern from our codebase:
-[paste your component template]
-
-Include:
-- Component file
-- Types file
-- Test file
-- Storybook story
-```
-
 ### Business Logic Implementation
 
 ```text
@@ -562,6 +536,32 @@ Consider:
 - Metro bundler cache
 - Linking issues
 - Version mismatches
+```
+
+#### React Native Component Generation
+
+```text
+Create a React Native component:
+
+Component: [name]
+Purpose: [what it does]
+Props: [list with TypeScript types]
+
+Requirements:
+- TypeScript with strict mode
+- Styled-components for styling
+- Full accessibility support
+- Handle loading/error/empty states
+- Memoization where appropriate
+
+Follow this pattern from our codebase:
+[paste your component template]
+
+Include:
+- Component file
+- Types file
+- Test file
+- Storybook story
 ```
 
 ### Frontend Team
